@@ -30,4 +30,6 @@ android {
 }
 dependencies {
     compileOnly 'com.squareup.okhttp3:okhttp:3.9.1'
+    compileOnly 'com.squareup.retrofit2:retrofit:2.3.0'
+    compileOnly 'com.alibaba:fastjson:1.1.67.android'
 }

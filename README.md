@@ -14,6 +14,15 @@
   builder.cookieJar(new CookieJarImpl(new PersistentCookieStore(MyApplication.getInstance())));
 ```
 
+## 版本
+
+- 1.0.0
+只是cookie持久化处理
+
+- 2.0.0
+持久化+FastJsonConverter
+`compile 'com.github.yizeliang:OkhttpCookieJarLibrary:2.0.0'`
+
 
 ## 依赖
 
@@ -25,8 +34,6 @@ allprojects {
 			maven { url 'https://jitpack.io' }
 		}
 	}
-
-
 
 dependencies {
 	        compile 'com.github.yizeliang:OkhttpCookieJarLibrary:1.0.0'
