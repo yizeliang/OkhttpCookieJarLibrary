@@ -1,12 +1,6 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
-
-group = 'com.github.yizeliang'
-
-
 android {
     compileSdkVersion rootProject.compileSdkVersion
-    buildToolsVersion rootProject.buildToolsVersion
     defaultConfig {
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
@@ -15,8 +9,6 @@ android {
         multiDexEnabled true
     }
     buildTypes {
-        debug {
-        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -33,3 +25,5 @@ dependencies {
     compileOnly 'com.squareup.retrofit2:retrofit:2.3.0'
     compileOnly 'com.alibaba:fastjson:1.1.67.android'
 }
+
+apply from: 'upload.gradle'
