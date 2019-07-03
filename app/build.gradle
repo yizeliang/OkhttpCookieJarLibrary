@@ -26,4 +26,3 @@ dependencies {
     compileOnly 'com.alibaba:fastjson:1.1.67.android'
 }
 
-apply from: 'upload.gradle'
